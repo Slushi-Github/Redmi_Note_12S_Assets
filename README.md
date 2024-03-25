@@ -15,6 +15,7 @@ Also, I am not a contribution of the Xioami community or this specific phone, I 
 And as I am not the owner of the recoveries, possibly with HyperOS updates, or another problem, they will stop working and I will not do anything to fix that.
 
 if you have any suggestions for this repository, I am happy to see them and take them into account if they are really worth it :3
+This is my first repository made for the public, probably there are some mistakes, sorry hehe...
 
 # How to flash OrangeFox on Redmi Note 12S:
 
