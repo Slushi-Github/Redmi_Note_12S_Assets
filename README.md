@@ -3,9 +3,17 @@
 
 this repository containing the original boot.img of the latest HyperOS version (**OS1.0.5.0.UHZMIXM**) of the Xiaomi Redmi Note 12S (Global). and the OtrangeFox and TWRP usable for this same phone.
 
+Boot Image from: https://xiaomifirmwareupdater.com/hyperos/sea/stable/OS1.0.5.0.UHZMIXM/
+
+OrangeFox Image from: https://github.com/shazu-xd/releases/releases/download/vofox/OrangeFox-R12.1_1-Stable-sea.img (The page not exist..)
+
 # How to flash OrangeFox on Redmi Note 12S:
 
-Of course, you must already have the bootloader unlocked on your phone, and have the necessary drivers to recognize it in Fastboot mode, right? ok.
+I AM NOT RESPONSIBLE FOR ANY DAMAGE THAT MAY RESULT FROM THIS PROCEDURE EVEN IF IT IS APPLIED ON THE SAME DEVICE.
+
+IF FOR SOME REASON YOU GET STUCK IN A BOOTLOOP AFTER FLASHING THE `orangeFox.img`, GO BACK TO FASTBOOT AND FLASH THE `bootOriginal.img`.
+
+Of course, you must already have the bootloader unlocked on your phone, and have the necessary drivers in your PC to recognize it in Fastboot mode, right? ok.
 
 Download `orangeFox.img` from this repository, and also `bootOriginal.img`
 
@@ -18,14 +26,20 @@ using [Platform Tools](https://developer.android.com/tools/releases/platform-too
 ```cmd
 fastboot flash boot theRecoveryImage.img
 ```
-If you receive this error (or similar):
+If you receive this:
 
-![](https://github.com/Slushi-Github/Redmi_Note_12S_Assets/blob/main/readme/ErrorOnFlash.png)
+![](https://github.com/Slushi-Github/Redmi_Note_12S_Assets/blob/main/readme/CorrectFlash.png)
 
-Try with another cable!
+Perfect, the flash is completed!
+Your phone will reboot, if not, use this:
 
-If it was the opposite, your phone will reboot, you are already in OrangeFox recovery!
+```cmd
+fastboot reboot
+```
+After the reboot, you are already in OrangeFox recovery!
 but... you don't have access to your HyperOS, because we overwrote the boot partition, relax, here is the next step:
-
-Find the bootOriginal.img that you saved on your SD, and flash that bootOriginal.img to your boot partition, **BUT, DO NOT RESET**, you should still be in OrangeFox recovery, which is loaded in your memory.
+Find the bootOriginal.img that you saved on your SD, and flash that bootOriginal.img to your boot partition, **BUT, DON'T RESET**, you should still be in OrangeFox recovery, which is loaded in your memory.
+In the bottom bar, go to the last option, i.e., [Menu],
+you should see an option called ``Flash current OrangeFox``, go to that option and use it, it will flash the OrangeFox you have in memory, in the original boot partition of your Redmi Note 12S.
+Now you can reboot and get back to your HyperOS.
 
