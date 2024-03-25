@@ -26,6 +26,8 @@ IF FOR SOME REASON YOU GET STUCK IN A BOOTLOOP AFTER FLASHING THE `orangeFox.img
 
 Of course, you must already have the bootloader unlocked on your phone, and have the necessary drivers in your PC to recognize it in Fastboot mode, right? ok.
 
+(All the images that you will see in this section, were taken by me, even the recovery images.)
+
 Download `orangeFox.img` from this repository, and also `bootOriginal.img`
 
 Why download the `bootOriginal.img`? because we need it after flashing the recovery, put that file to the SD of your phone, preferably in a specific folder for your convenience.
@@ -48,11 +50,21 @@ Your phone will reboot, if not, use this:
 fastboot reboot
 ```
 After the reboot, you are already in OrangeFox recovery!
-but... you don't have access to your HyperOS, because we overwrote the boot partition, relax, here is the next step:
 
-Find the bootOriginal.img that you saved on your SD, and flash that bootOriginal.img to your boot partition, **BUT, DON'T RESET**, you should still be in OrangeFox recovery, which is loaded in your memory.
-In the bottom bar, go to the last option, [Menu],
+but... you don't have access to your HyperOS, because we have overwritten the boot partition, here, OrangeFox being in the boot partition, is a bit unstable, be quick but think about your actions!
 
-you should see an option called ``Flash current OrangeFox``, go to that option and use it, it will flash the OrangeFox you have in memory, in the original boot partition of your Redmi Note 12S.
+if you take too long, the recovery will crash, and the phone will reboot, here the steps:
+
+Find the `bootOriginal.img` that you saved on your SD, and flash that `bootOriginal.img` to your boot partition:
+
+![](https://github.com/Slushi-Github/Redmi_Note_12S_Assets/blob/main/readme/FlashBootImage.png)
+
+**BUT, DON'T RESET**, you should still be in OrangeFox recovery, which is loaded in your memory.
+In the bottom bar, go to the last option, [Menu]
+
+you should see an option called `Flash current OrangeFox`, go to that option and use it:
+
+![](https://github.com/Slushi-Github/Redmi_Note_12S_Assets/blob/main/readme/FlashCurrentOFox.png)
+
+it will flash the OrangeFox you have in memory, in the original boot partition of your Redmi Note 12S.
 Now you can reboot and get back to your HyperOS.
-
