@@ -1,7 +1,7 @@
 
 # What is this?
 
-this repository containing the original boot.img of the latest HyperOS version (**OS1.0.5.0.UHZMIXM**) of the Xiaomi Redmi Note 12S (Global). and the OtrangeFox and TWRP usable for this same phone.
+this repository containing the original boot.img of the latest HyperOS version (**OS1.0.5.0.UHZMIXM**) of the Xiaomi Redmi Note 12S (Global). and the OtrangeFox and TWRP usable (?) for this same phone.
 
 Boot Image from: https://xiaomifirmwareupdater.com/hyperos/sea/stable/OS1.0.5.0.UHZMIXM/
 
