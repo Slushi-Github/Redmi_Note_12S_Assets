@@ -49,6 +49,7 @@ fastboot reboot
 ```
 After the reboot, you are already in OrangeFox recovery!
 but... you don't have access to your HyperOS, because we overwrote the boot partition, relax, here is the next step:
+
 Find the bootOriginal.img that you saved on your SD, and flash that bootOriginal.img to your boot partition, **BUT, DON'T RESET**, you should still be in OrangeFox recovery, which is loaded in your memory.
 In the bottom bar, go to the last option, [Menu],
 
