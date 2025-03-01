@@ -1,5 +1,24 @@
+# [1/03/2025]: CRITICAL EMERGENCY CHANGES!!!!!!!
 
-# What is this?
+With HyperOS 2 finally released for the Xiaomi Redmi Note 12S Global, there are some important things that have changed.
+
+The version of Android with HyperOS 2 has changed from Android 14 to Android 15.
+
+What's up with this? The most important thing, the ``boot.img``, has changed, and not only that, the OrangeFox that was for this device, no longer works (or at least it did in my case).
+
+Currently, as I write this, there is no public way to get the ``boot.img`` of HyperOS 2 for the Redmi Note 12S, since at best you will get the ROM version in recovery, which does not contain the file we need.
+
+And if you make the mistake I did, flashing a ``boot.img`` from the previous version of HyperOS, which was based on Android 14, you will be in a beautiful bootloop.
+
+I come here updating this repository almost a year later, delivering the only working custom recovery, TWRP, and a ``boot.img`` extracted from version ``OS2.0.1.8.VHZMIXM``.
+
+I have extracted the ``boot.img`` using [payload-dumper-go](https://github.com/ssut/payload-dumper-go).
+
+Thank you [Trock](https://github.com/Gametrock) for helping me with the problem I had at the beginning with my device, I was desperate hehe...
+
+
+
+# What is this? (OLD README, DO NOT READ)
 
 this repository containing the original boot.img of the latest HyperOS version (**OS1.0.6.0.UHZMIXM**) of the Xiaomi Redmi Note 12S (Global). and the OtrangeFox and TWRP usable (?) for this same phone.
 
