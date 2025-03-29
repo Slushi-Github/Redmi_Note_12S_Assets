@@ -1,4 +1,4 @@
-# [1/03/2025]: CRITICAL EMERGENCY CHANGES!!!!!!!
+# [29/03/2025]: CRITICAL EMERGENCY CHANGES!!!!!!!
 
 With HyperOS 2 finally released for the Xiaomi Redmi Note 12S Global, there are some important things that have changed.
 
@@ -10,9 +10,11 @@ Currently, as I write this, there is no public way to get the ``boot.img`` of Hy
 
 And if you make the mistake I did, flashing a ``boot.img`` from the previous version of HyperOS, which was based on Android 14, you will be in a beautiful bootloop.
 
-I come here updating this repository almost a year later, delivering the only working custom recovery, TWRP, and a ``boot.img`` extracted from version ``OS2.0.1.8.VHZMIXM``.
+I come here updating this repository almost a year later, delivering the only working custom recovery, TWRP, and a ``boot.img`` extracted from version ``OS2.0.2.0.VHZMIXM``.
 
 I have extracted the ``boot.img`` using [payload-dumper-go](https://github.com/ssut/payload-dumper-go).
+
+Go to the [Assets folder](https://github.com/Slushi-Github/Redmi_Note_12S_Assets/tree/main/Assets) and download the ``boot.img`` and the ``twrp_sea.img``.
 
 Thank you [Trock](https://github.com/Gametrock) for helping me with the problem I had at the beginning with my device, I was desperate hehe...
 
